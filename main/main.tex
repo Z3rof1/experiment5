@@ -1,0 +1,54 @@
+\documentclass[letterpaper, 10pt, conference]{ieeeconf}      
+\usepackage{subfiles}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\numberwithin{equation}{section}
+\usepackage[english]{babel}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{bibfile.bib}
+\IEEEoverridecommandlockouts                              
+\overrideIEEEmargins                                      
+
+% See the \addtolength 
+
+\title{\LARGE \bf Waves and Pulses in Cables}
+
+\author{Shyam Krishnan and Luka Filipovic}
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{abstract}
+This is an abstract. It will be filled at a later time. I'm just using this opportunity to perform basic tests, such as formatting concerns, and, well, other stuff. At this point, I'm actually running out of things to write down, and honestly the real abstract should not be significantly longer than this piece, so I'll just stop writing bullshit around, well, now.
+\end{abstract}
+
+\section{Introduction}
+\subfile{../source/intro.tex}
+
+\section{Theory\label{sec:theory}}
+\subfile{../source/theory.tex}
+
+\section{Experimental Design and Procedure}
+\subfile{../source/experiment.tex}
+
+\section{Analysis}
+\subfile{../source/analysis.tex}
+
+\section{Conclusions}
+\subfile{../source/conclusion.tex}
+
+\printbibliography
+
+\end{document}
+\grid
+\grid
