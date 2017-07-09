@@ -2,6 +2,51 @@
 
 \begin{document}
 
-Hello.
+
+It's a well known fact that the motion of a simple pendulum is simple harmonic (assuming the angular displacement $\theta$ is small). The equation of motion for a simple pendulum is therefore: 
+\\
+\begin{equation}
+\tau = -I\ddot\theta
+\end{equation}
+\\
+This has the solution:
+\\
+\begin{equation}
+\theta = \theta_0 cos(\omega t)
+\end{equation}
+\begin{equation}
+\omega_0 = \sqrt{g/L}
+\end{equation}
+\\
+Where $\theta_0$ is the initial angular displacement and $\omega_0$ is the angular frequency of the oscillation.
+\\\\
+For the case of two simple pendula coupled by a spring of spring constant $k$, the equations of motion for small $\theta_i$ are (as given in the lab handout):
+\\
+\begin{equation}
+\ddot\theta_1 = -\frac{g}{L}\theta_1 + \frac{kl^2}{mL^2}(\theta_2 - \theta_1)
+\end{equation}
+\begin{equation}
+\ddot\theta_2 = -\frac{g}{L}\theta_2 + \frac{kl^2}{mL^2}(\theta_1 - \theta_2)
+\end{equation}
+Where $l$ is the 'coupling length' of the pendula. This coupling length refers to the point along the length of each pendulum at which the spring connects the two pendula. 
+\\
+As mentioned in Section I, there are two sets of initial conditions of interest when analyzing coupled oscillators. The first is when $\theta_1 = \theta_2$ and $\dot\theta_1 = \dot\theta_2$ i.e. when both pendula are started with the same angular displacement and angular velocity. This inital condition corresponds to the 'even' normal mode. In this case, the spring has no effect on the pendula because it does not undergo extension or compression. The pendula oscillate in phase with the same angular frequency $\omega_0$ as in the single pendulum case.
+\\
+The second set of initial conditions is when $\theta_1 = -\theta_2$ and $\dot\theta_1 = -\dot\theta_2$. In this case, the pendula are started with the same amplitude, but in different directions. The pendula oscillate with a phase difference of $180\degree$ i.e. exactly out of phase. The angular frequency of oscillation of each pendulum is then given by:
+\begin{equation}
+\omega = \omega_0 + \frac{kl^2}{\omega_0 mL^2}
+\end{equation}
+Where the approximations made include: the spring constant $k$ is small, the angular displacements are small, binomial approximation.
+\\
+The above sets of initial conditions correspond to the normal modes of the coupled oscillator system. These normal modes are important because any arbitrary set of initial conditions can be represented as a superposition of the normal modes. Consider the example given in the lab handout: When one pendulum is kept at rest with the other displaced by some angle $\theta_2$, the difference in the angular frequencies between the two pendula are given by:
+\begin{equation}
+\Delta\omega = \frac{kl^2}{\omega_o mL^2}
+\end{equation}
+Here, $\Delta\omega$ is the beat frequency of the system. The energy oscillates back and forth between the two pendula such that after some time $T/2$, the pendulum that was initially oscillating stops whereas the pendulum that was initially at rest oscillates with amplitude $\theta_2$. The beat period $T$ and the beat frequency $\omega$ are related by the usual relation:
+\begin{equation}
+\omega = \frac{2\pi}{T}
+\end{equation}
+Therefore if the constants $m, \omega_0, L, k and l$ are known, the beat frequency can be determined.
+
 
 \end{document}
